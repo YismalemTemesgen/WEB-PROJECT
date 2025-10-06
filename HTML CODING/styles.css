@@ -1,0 +1,24 @@
+body{
+    background-color: lightblue;
+    padding: 0;
+    margin: 0;
+    background-image: url(567848.jpg);
+    background-size: cover;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+img{
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.box{
+    width: 380px;
+    height: 320px;
+    background-color: #000;
+   position: absolute;
+   color: #fff;
+   transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
