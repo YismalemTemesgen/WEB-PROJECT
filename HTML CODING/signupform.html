@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup Form</title>  
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body {
+                font-size: 16px;
+                background-image: url(567848.jpg);
+                background-size: cover;
+                color: white;
+            }
+            form {
+                width: 300px;
+                margin: 50px auto;
+                padding: 30px;
+                border: 1px solid #ccc;
+                border-radius: 0px 0px 18px 18px;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            .input-group {
+                margin: 5px 0px 15px 0px;
+            }
+            .input-group input {
+                height: 30px;
+                padding: 5px 10px;
+                width: 93%;
+                font-size: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-shadow: 0px 0px 8px 16px #ccc;
+            }
+            .btn {
+                background-color: #5cb85c;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 4px;
+                cursor: pointer;
+                align-items: center;
+                text-shadow: 2px 2px 4px #000000;
+                font-size: 20px;
+            }
+            .btn:hover {
+                background-color: #4cae4c;
+            }
+        </style>    
+    </head>
+    <body>
+       <form action="signupform.html" >
+        <div class="input-group">
+            <input type="text"  name="username" placeholder="Enter your username">
+        </div>
+          <div class="input-group">
+            <input type="text"  name="fname" placeholder="Enter your first name">
+        </div>
+          <div class="input-group">
+            <input type="text"  name="lname" placeholder="Enter your last name">
+        </div>
+        <tr>
+            <td>Sex</td>
+            <td>
+                <input type="radio" name="sex" value="male">Male
+                <input type="radio" name="sex" value="female">  Female       
+            </td>
+        </tr>
+        <div class="input-group">
+            <input type="email"  name="useremail" placeholder="Enter your email">
+        </div>
+        <div class="input-group">
+           <input type="phone" name="phone" placeholder="Enter your phone number 09*********">
+        </div>
+          <div class="input-group">
+            <input type="password"  name="userpassword" placeholder="Enter your password">  
+        </div>
+          <div class="input-group">
+            <input type="password"  name="confirmpassword" placeholder="Confirm your password">
+        </div>
+        <div class="input-group">
+            <button type="submit" class="btn" name="signup">Sign Up</button>
+       </form>
+    </body>
+</html>
