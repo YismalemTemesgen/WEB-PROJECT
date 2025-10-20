@@ -3,41 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Yisma">
-    <meta name="discription" content="This is my first webpage">
+    <meta name="description" content="This is my first webpage">
     <title>My first webpage</title>
     <link rel="icon" href="yetewahidoLijochi.jpg" type="image/x-icon">
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
-    <h1>Welcome to My First Webpage</h1>
+    <header>
+    <h1>My Goals for the Year</h1>
+
+    <nav aria-label="primary-navigation">
+       
+        <ul>
+            <li>
+                <a href="#HTML-Learning">HTML Learning</a>
+            </li>
+            <li>
+             <a href="#vacation-plans">Vacation Plans</a>
+            </li> 
+              <li>
+             <a href="#contact">Contact Me</a>
+            </li> 
+        </ul>
+    </nav>
+
+    </header>
 
     <hr>
 
-    <h2>Introduction</h2>
-    <p>This is:
-        <br>.... a simple webpage created using HTML. 
-        <br>.... It includes a heading, a paragraph, and an image.
-        <br>.... I use resources like W3Schools and <abbr title="Mozilla Developer Network">MDN</abbr> Web Docs to learn HTML and CSS.
-        <br>.... I also practice coding regularly to improve my skills.
-    </p>
+    <main>
+<article id="HTML-Learning">
 
-          <h3>About Me</h3>
+    <h2>I'm Ready to Learn HTML!</h2>
+    <p>This is my first webpage.</p>
+    <section>
+        <h3>HTML</h3>
+    <img src="img/HTMLlogo.jpg" alt="HTMLlogo" width="200" title="I am learning HTML" height="200">
+
+    <figure>
+        <figcaption>An Example of HTML code</figcaption>
+        <p><code>&lt;h1&gt;Hello, World!&lt;/h1&gt;</code></p>
+    </figure>
+     </section>
+     <section>
+    <h3>My Daily Schedule</h3>
+    <p>This is:   
+                   <br>&nbsp;&nbsp;&nbsp;&nbsp;.... a simple webpage created using HTML. 
+                </p>  
+     <ol>
+                   <li>.... my first attempt at coding a webpage.</li>
+                   <li>.... It includes a heading, a paragraph, and an image.</li>
+                   <li>.... I use resources like W3Schools and <abbr title="Mozilla Developer Network">
+               <a href="https://developer.mozilla.org/">MDN</a>
+                </abbr> Web Docs to learn HTML and CSS.</li>
+                   <li>.... I also practice coding regularly to improve my skills.</li>
+
+    </ol>
+    <h3>About Me</h3>
     <p>My name is Yisma, and I am learning how to create webpages using HTML and CSS.</p>
 
+    <aside>
+        <details>
+            <summary>
+                Guess the <mark> number of hours</mark> I code a day
+            </summary>
+            <p>I start at <time datetime="08:00"> 8 am</time>
+                 and I write usually code <time datetime="PT4H"> for about 4-5 hours</time> a day.</p>
+        </details>
+    </aside>
+    <table>
+        <caption>My Daily Schedule</caption>
+        <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th scope="col">Time</th>
+            <th scope="col">Activity</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Morning</th>     
+            <td> 
+               <time datetime="08:00"> 8 am</time>-<time datetime="11:00"> 11 am</time>
+            </td>
+            <td>Write Code</td>
+        </tr>
+        <tr>
+            <th scope="row">Break</th>
+            <td>
+               <time datetime="11:00"> 11 am</time>-<time datetime="12:00"> 12 pm</time>
+            </td>
+            <td>Eat Lunch</td>
+        </tr>      
+        <tr>
+             <th scope="row">Afternoon</th>
+            <td>
+               <time datetime="12:00"> 12 pm</time>
+               -<time datetime="17:00"> 5 pm</time>
+            </td>
+            <td>study for other subjects</td>
+        </tr>
+        <tr>
+            <th scope="row">Evening</th>
+            <td rowspan="2">All Other Times</td>
+            <td>Free Time</td>
+        </tr>
+        <tr>
+            <th scope="row">Night</th>
+            <td>Sleep</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">And that's 
+                    what I do ever day, 5 day a week.
+                    Just eat,sleep,code and study!
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+</article>
+
     <hr>
 
-    <h2>I am also planning a vacation</h2>
-    <p>I've been working hard and <em>really need a getaway.</em> I'm thinking of visiting the mountains for some fresh air and relaxation.</p>
-    <p>I live in Ethiopia, and <strong>I want to visit the Simien Mountains National Park.</strong> It's known for its stunning landscapes and unique wildlife.</p>
-    <p>During my vacation, I plan to go hiking, take lots of photos, and enjoy the local cuisine. I'm really looking forward to this trip!</p>  
+    <article id="vacation-plans">
 
+    <h2>I am also planning a vacation</h2>
+    <p>I've been working hard and <em>really need a getaway.</em>
+         I'm thinking of visiting the mountains for some fresh air and relaxation.</p>
+    <p>I live in Ethiopia, and <strong>I want to visit the Simien Mountains National Park.</strong>
+         It's known for its stunning landscapes and unique wildlife.</p>
+    <p>During my vacation, I plan to go hiking, take lots of photos, and enjoy the local cuisine. 
+        I'm really looking forward to this trip!</p>  
+<section>
     <h3> The place I'd like to visit</h3>
-    <p>I'd like to visit the Simien Mountains National Park in Ethiopia. It's known for its breathtaking views and diverse wildlife.</p>
-    <p>I've heard good things about going here:</p>
-    <address>
-        <a href="https://en.wikipedia.org/wiki/Simiens_Mountains" target="_blank">Simien Mountains - Wikipedia</a>
-    </address>
+
+<ol>
+        <li>
+            <p>I'd like to visit the Simien Mountains National Park in Ethiopia. 
+                It's known for its breathtaking views and diverse wildlife.</p>
+                <figure>
+                <img src="img/simien_mountains.jpg" alt="Simien Mountains" 
+                width="300" height="200" loading="lazy">
+                <figcaption>Simien Mountains</figcaption>
+            </figure>
+    </li>
+    <li>
+        <p>I've heard good things about going here:</p>
+        <address>
+            <a href="https://en.wikipedia.org/wiki/Simiens_Mountains" 
+            target="_blank">Simien Mountains - Wikipedia</a>
+        </address>
+        <figure>
+            <img src="img/vacation.jpg" alt="cancun vacation"
+             title="It's 5 o'clock someWhere!" width="300" height="200" loading="lazy">
+            <figcaption>Cancun Vacation</figcaption>
+        </figure>
+    </li>
+</ol>
+
+</section>
     <!-- target="_blank" makes the link open in a new tab -->
+    <section>
     <h3>My daily schedule</h3>
     <p>My daily schedule includes:</p>
     <ul>
@@ -46,6 +175,135 @@
         <li>Evening: Relax by reading books or watching movies.</li>
     </ul>
 
-    <img src="yetewahidoLijochi.jpg" alt="A beautiful scenery" width="300">
+    <dl>
+        <dt>North pole</dt>
+        <dd>I hear this place is really <strong>cold!</strong></dd>
+        <dt>South pole</dt>
+        <dd>This place is even colder!</dd>
+        <dt>Mountains</dt>
+        <dd>These are very <strong>cold!</strong></dd>
+    </dl>
+    </section>
+    </article>   
+
+    <hr>  
+    <article id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd really like to hear from you!</p>
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>      
+                <legend>Personal Information</legend>       
+            <p>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Yisma" autocomplete="on" required autofocus>     
+            </p>
+        <p>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Temu" autocomplete="on" required>   
+        </p>       
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </p>
+        <p>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+        </p>
+        <p>
+            <label for="decade">Favorite Decade:</label>
+            <input type="number" id="decade" name="decade" min="1950" max="2020" step="10" value="1980" required>
+        </p>
+        <p>
+            <label for="coffee">Favorite coffee:</label>
+            <select name="coffee" id="coffee" multiple size="5">
+                <optgroup label="Coffees"> 
+                <option value="regular">Regular Coffee</option>
+                <option value="iced coffee">Iced Coffee</option>
+                </optgroup>
+                <optgroup label="Espresso Drinks">
+                <option value="latte" selected>Latte</option>
+                <option value="macchiato">Macchiato</option>
+                <option value="mocha">Mocha</option>               
+                <option value="cappuccino">Cappuccino</option>
+                <option value="cortado">Cortado</option>
+                <option value="americano">Americano</option>
+                </optgroup>
+                <option value="other">Other</option>
+            </select>          
+        </p>
+        <!-- <p>
+            <label for="coffee">Favorite coffee:</label>
+            <input type="text" name=" coffee" id="coffee" list="coffee-List" placeholder="Select your favorite coffee" required>
+            <datalist id="coffee-List">
+                <option value="Regular Coffee">
+                <option value="Iced Coffee">
+                <option value="Latte">
+                <option value="Macchiato">
+                <option value="Mocha">
+                <option value="Cappuccino">
+                <option value="Cortado">
+                <option value="Americano">
+                <option value="Other"></option>
+            </datalist>
+        </p> -->
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>What is your favorite food?</legend>
+            <p>
+            <input type="radio" id="taco" name="food" value="taco" checked>
+            <label for="taco">Taco</label>
+            </p>
+            <p>
+            <input type="radio" id="pizza" name="food" value="pizza">
+            <label for="pizza">Pizza</label>
+            </p>
+            <p>
+            <input type="radio" id="other" name="food" value="other">
+            <label for="other">Other</label>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Do you have pets?</legend>
+            <p>
+                <input type="checkbox" id="dog" name="pets" value="dog" checked>
+                <label for="dog">Dog</label>
+            </p>
+            <p>
+                <input type="checkbox" id="cat" name="pets" value="cat">
+                <label for="cat">Cat</label>
+            </p>
+            <p>
+                <input type="checkbox" id="fish" name="pets" value="fish">
+                <label for="fish">Fish</label>
+            </p>
+            <p>
+                <input type="checkbox" id="otherpet" name="pets" value="otherpet">
+                <label for="otherpet">Other</label>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Send Me a Note</legend>
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="10" cols="30" placeholder="Enter your message here..." required></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+        <button type="reset">Reset</button>
+    </form>
+    </article>
+</main>
+    <hr>
+    <footer>
+<p>
+    &lt;&lt;&lt;&copy; <a href="about.html">Yisma</a> &gt;&gt;&gt;<br>
+    </p>    
+    <p>
+<a href="#">Back To Top</a>
+    </p>
+</footer>
 </body>
 </html>
