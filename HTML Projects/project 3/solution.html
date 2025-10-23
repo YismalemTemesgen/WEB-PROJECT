@@ -1,0 +1,39 @@
+<!DOCTYPE HTML><!-- Specifies the document type and version of HTML -->
+<html lang="en"><!-- Begins the HTML document and sets the language to English -->
+<head>
+<meta charset=utf-8><!-- Sets the character encoding to UTF-8 -->
+<title>HTML CSS Form exercise</title><!-- Sets the title of the webpage -->
+</head>
+<body>
+<div class="container"><!-- Begins a container div -->
+<h1>Travel reservation form</h1><!-- Displays the heading "Travel reservation form" -->
+<h3>* denotes mandotory</h3><!-- Displays a note indicating mandatory fields -->
+<form id="registration_form" method="POST"><!-- Begins a form with the ID "registration_form" and using POST method -->
+<label>Full name*:</label><br><!-- Displays a label for full name input -->
+<input type="text" name="full_name" placeholder="FirstName LastName" autofocus="autofocus" value=""><br><!-- Creates a text input for full name with placeholder and autofocus -->
+<label>Email address*:</label><br><!-- Displays a label for email address input -->
+<input type="text" name="email_addr" value=""><br><!-- Creates a text input for email address -->
+<label>Select Tour Package* :</label><br><!-- Displays a label for package selection -->
+<select name="package"><!-- Creates a dropdown menu for selecting a tour package -->
+<option value="Goa" >Goa</option><!-- Option for Goa package -->
+<option value="Kashmir" >Kashmir</option><!-- Option for Kashmir package -->
+<option value="Rajasthan" >Rajasthan</option><!-- Option for Rajasthan package -->
+</select><br>
+<label>Arrival date*:</label><br><!-- Displays a label for arrival date input -->
+<input type="text" name="arv_dt" placeholder="m/d/y" value=""><br><!-- Creates a text input for arrival date with placeholder -->
+<label>Number of persons*:</label><br><!-- Displays a label for number of persons input -->
+<input type="text" name="persons" value=""><br><!-- Creates a text input for number of persons -->
+<label>What would you want to avail?*</label><br><!-- Displays a label for facilities selection -->
+  Boarding<input type="checkbox" name="facilities[]" value="boarding"  ><br><!-- Checkbox for boarding -->
+  Fooding<input type="checkbox" name="facilities[]" value="fooding"  ><br><!-- Checkbox for fooding -->
+  Sight seeing<input type="checkbox" name="facilities[]" value="sightseeing"  ><br><!-- Checkbox for sight seeing -->
+<label>Discount Coupon code:</label><br><!-- Displays a label for discount coupon code input -->
+<input type="text" name="dis_code" value=""><br><!-- Creates a text input for discount coupon code -->
+<label>Terms and conditions*</label><br><!-- Displays a label for terms and conditions -->
+<input type="radio" name="tnc" value="agree" checked>I agree <!-- Radio button for agreeing to terms -->
+<input type="radio" name="tnc" value="disagree" >I disagree<br><!-- Radio button for disagreeing to terms -->
+<button type="submit" class="btn btn-large btn-primary" name="submit">Complete reservation</button><!-- Submit button for completing reservation -->
+</form><!-- Ends the form -->
+</div><!-- Ends the container div -->
+</body>
+</html>
