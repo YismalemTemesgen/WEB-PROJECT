@@ -1,0 +1,56 @@
+/*-- selector--*/
+/*-- 1,simple selector--*/
+h2{
+  color: goldenrod;
+}
+.subtitle{
+  color: green;
+}
+#title{
+  color: blue;
+}
+/*--2,universal selector--*/
+*{
+  text-align: center;
+  color: aqua;
+}
+/*3,Group selector*/
+h1,h2{
+  text-align: center;
+}
+body{
+  /*background-color: rgb(246,139,17);*/
+ /* background:linear-gradient(to right,rgb(246,139,17),green);
+  background-attachment: fixed;
+  background-repeat: no-repeat;*/
+  /*images*/
+  background-image: url("../CSS/images/567848.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+h2{
+  background-color:yellow;
+}
+h2,p{
+  border-style: solid;
+  border-color: rgb(255, 72, 0);
+  border-radius: 10px 10px 20px 20px;
+  border-width: 2px;
+  border-left-width: 10px;
+  border-right-style: dotted ;
+  border-left-color: blue;
+}
+h1{
+  color:white;
+}
+/* CSS Margin */
+body{
+  /* margin: 0; */
+  /* border: 2px solid blueviolet; */
+}
+.para2{
+  margin-top: 50px;
+  margin-left:50px;
+}

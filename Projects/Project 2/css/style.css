@@ -1,0 +1,73 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Image style */
+img {
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-left: 20px;
+}
+
+/* Heading style */
+h1 {
+  text-align: center;
+  width: 300px;
+  border: 2px solid;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.7);
+}
+
+/* Main container */
+div {
+  display: flex;                /* horizontal alignment */
+  justify-content: space-between; /* push heading left, links right */
+  align-items: center;          /* vertically center */
+  padding: 20px 40px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+/* Each span (link container) */
+span {
+  margin-left: 10px;
+}
+
+/* Link style */
+a {
+  text-decoration: none;
+  color: darkblue;
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.8);
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+/* Responsive for small screens */
+@media (max-width: 700px) {
+  div {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+body{
+  background-image: url("../img/chicken.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
