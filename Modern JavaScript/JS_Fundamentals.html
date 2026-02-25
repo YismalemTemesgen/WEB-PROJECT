@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>this before the script...</p>
+    <script>
+      'use strict';
+      //-------------------------------------------------------------
+      // comments
+       // This is single line comments
+       /* this is multiline comments
+       */
+      //-----------------------------------------------------------------------------------
+      // variable
+      let message;
+      var user = "Yisma";
+      let age = "23";
+      let language="English";
+      message = language; // copy
+      alert(message);
+      const grabity = 9.18;
+      alert(grabity); // grabity = 9; is error
+      message = "Hello"; // let message = "Hello"; is error
+      message = "World";
+      let $ = 1 , _ = 2;
+      alert($ + _);
+      alert(message);
+      alert("Hello, World!");
+      alert(user);
+      const COLOR_RED = "#F00";
+      let color = COLOR_RED ;
+      alert(color);
+//------------------------------------------------------------------------------------
+      // Datatype: There is no character type.
+
+      //Eight basic data types in JavaScript:- 
+      // Seven primitive data types: number,bigint,string, boolean ,null, undefined and symbol
+      //And one non-primitive data type:
+      //object for more complex data structures.
+      
+      // Number
+
+      let n = 123;
+      n = 354.56;
+      alert(1/0); // Infinity
+      alert("Not a Number"/2); // NaN
+      alert(NaN ** 0); //   1
+      // “number” type cannot safely represent integer values larger than (2^53-1) or less than -(253-1) for negatives.
+      console.log(9007199254740991 + 1); // 9007199254740992
+      console.log(9007199254740991 + 2); // 9007199254740992
+      // the "n" at the end means it's a BigInt
+      const bigInt = 1234567890123456789012345678901234567890n;
+
+      // String
+
+      let name = "Yisma"; // “simple” quotes.
+      //embed a variable
+      alert(`Hello, ${name}!`); // the result becomes a part of the string.
+      //embed  a variable
+      alert(`The result is ${1 + 4}`); // Backticks `Hello` “extended functionality” quotes
+      alert ("The result is ${1 + 4}"); // The result is ${1 + 4}
+
+      // Boolean(logical type)
+
+      let isGreater = 4>3;
+      alert(isGreater);
+
+      // null value
+
+      let Id = null; // which represents “nothing”, “empty” or “value unknown”.  Is not a “reference to a non-existing object” or a “null pointer”
+
+      // Undefined value
+
+      let school;
+      alert(school);
+      let length = 100;
+      length = undefined;
+      alert(length);
+
+      //All other types are called “primitive” because their values can contain only a single thing (be it a string or a number or whatever). In contrast, objects are used to store collections of data and more complex entities.
+      
+      // typeof is an operator , not a function.
+
+      typeof undefined;
+      typeof 0; // The same as typeof(0);
+      typeof Math;
+      typeof null;
+      typeof "yisma";
+      typeof true;
+      typeof alert;
+      typeof Symbol('id');
+      typeof 10n;
+//-----------------------------------------------------------------------------------
+      // Interaction: alert, prompt, confirm
+      //3 browser-specific functions to interact with visitors:
+      //alert
+      alert("hello");
+      //prompt: It shows a modal window with a text message, an input field for the visitor, and the buttons OK/Cancel.
+      let myAge = prompt('How old are you?',100); // The second parameter is optional, but if we don’t supply it.
+      alert(`you are ${myAge} years old!.`);
+      let text = prompt('Text');
+      //confirm: The function confirm shows a modal window with a question and two buttons: OK and Cancel.
+      //The result is true if OK is pressed and false otherwise.
+      let isBoss = confirm("Are you boss?");
+      alert(isBoss);
+
+//----------------------------------------------------------------------------------
+       // Type conversions
+  // String conversions
+  let value = true;
+  alert(typeof value);
+
+  value = String(value);
+  alert(typeof value);
+
+  
+  // Numeric conversions: happens automatically.
+   alert("8"/"4"); //2, Strings converted to numbers
+
+   let str = "123";
+   alert(typeof str);
+
+   let num = Number(str);
+   alert(typeof str);
+
+   let Age = Number("This is my first name");
+   alert(Age);
+   // values            // Becomes
+   //undefined             NaN
+   // null                  0
+   // true and false      1 and 0
+   alert( Number(" 123 ")); // 123
+   alert( Number("123z")); // NaN
+   alert( Number(true)); // 1
+   alert( Number(false)); // 0
+   alert( Number(undefined)); // NaN
+   alert( Number(null));  // 0
+   alert( Number(" "));  // 0
+
+   // Boolean Conversion : It happens in logical operations and  the simplest one.
+   alert(Boolean(1));
+   alert(Boolean(0));
+   alert(Boolean(null));
+   alert(Boolean(undefined));
+   alert(Boolean(" "));
+   alert(Boolean("hello"));
+//-------------------------------------------------------------------------------------------------
+              //Basic operators, maths
+                 //unary
+      //An operator is unary if it has a single operand.
+    let x = 1;
+    x = -x;
+    alert(x);  // -1,unary negation was appled
+
+              // binary
+    //An operator is binary if it has two operands.
+    let z = 2, y =4;
+    alert(y-z);
+               //Maths
+    //The following math operations are supported: Addition +, Subtraction -,Multiplication *,Division /,Remainder %,Exponentiation **.
+                     //Remainder %
+              alert(5%2); // 1
+              alert(9%7); // 2
+              alert(4%2); // 0
+                      //Exponentiation **
+     // The exponentiation operator a ** b raises a to the power of b.
+            alert(2**3); // 8
+            alert(2**2); // 4
+          alert(4**(1/2)); // 2 (power of 1/2 is the same as a square root).
+          //String concatenation with binary +
+      let s = "yisma" + "lem";
+      alert(s); // yismalem
+      alert("1"+2); // 12
+      alert(2+"1"); // 21
+      alert(1+2+"3"); // 33 not 123
+      alert("4"+2+3); // 45 not 423
+//The binary + is the only operator that supports strings in such a way.
+    alert(6-"2"); // 4
+    alert(6/2); // 3
+   // Numeric conversion, unary +
+  // no effect on number
+  let g = 3;
+  alert(+g); // 3
+  let r = -2;
+  alert(+r); // -2
+// convert non number
+alert(+true); //1
+alert(+""); //0
+
+let orage = "2";
+let yellow = "4";
+alert(orage + yellow); // "24",binary plus concatenates string.
+// If we want to treat them as numbers, we need to convert and then sum them:
+let mab = "1";
+let meku = "2";
+
+alert(+mab + +meku); // 3 alert( Number(mab) + Number(meku) );
+
+            //Operator precedence
+// +unary plus,-unary negation,**	exponentiation,*multiplication,
+// /division,+ addition, - subtraction , = assignment
+
+                  //Assignment = returns a value
+          let a = 1;
+          let b = 2 ;
+          
+          let c = 3 -(a = b + 1); // Although, please don’t write the code like that. Such tricks definitely don’t make code clearer or readable.
+          alert(a); // 3
+          alert(c); // 0
+                 //Chaining assignments
+          let t,e,m;
+          t=e=m=2+4;
+          alert(t); //6
+          alerrt(e); //6
+          alert(m);  //6
+                 //Modify-in-place
+          let h = 2;
+          h += 4; //6
+          h *= 3;
+          alert(h); //18
+                  //Increment/decrement
+                //Increment ++ increases a variable by 1:
+          let counter = 2;
+          counter++;
+          alert(counter); //3
+                //Decrement -- decreases a variable by 1:
+          let Counter = 3;
+          Counter--;
+          alert(Counter); //2
+      //Increment/decrement can only be applied to variables. Trying to use it on a value like 5++ will give an error.
+      // all operators return a value. 
+          // prefix and postfix form for Increment
+            //prefix form
+          let COunter = 1;
+          let w = ++COunter;
+          alert(w); // 2
+            //postfix form
+          let COUnter = 2;
+          let d = COUnter++;
+          alert(d); // 2
+        // in Decrement also the same.
+        //with another operstors
+        let COUNter = 5;
+        alert(3*++COUNter); //18
+
+        let COUNTer = 3;
+        alert(4*COUNTer++); //12
+                 //Comma
+        let A =(1+2,3+4);
+        alert(A); //7
+   //-----------------------------------------------------------------------------------------------------------------------
+                            //Comparisons
+             //Boolean is the result
+        alert(2>1); //true
+        alert(3==4); //false
+        alert(4!=5); //true
+        let result = 5>4;
+        alert(result); //true
+             //String comparison
+        //In other words, strings are compared letter-by-letter.
+       alert('z'>'a'); //true
+       alert('yis'>'yir'); //true
+       alert('yisma'>'yism'); //true
+       alert('A'>'a'); //false
+              //Comparison of different types
+    //When comparing values of different types, JavaScript converts the values to numbers.
+       alert('2'>1); //true ,b/c string '2' is converted to number 2
+       alert('01'==1); //true
+       alert(true==1); //true
+       alert(false==0); //true
+       let f = 0;
+       alert(Boolean(f)); //false
+       let j = "0";
+       alert(Boolean(j)); //true
+       alert(f==j); //true
+  
+            //Strict equality
+       alert(0==false); //true
+       
+       //What to do if we’d like to differentiate 0 from false?
+       //A strict equality operator === checks the equality without type conversion.
+       alert(0===false); //false, b/c the types are different.
+            //Comparison with null and undefined
+        //For a strict equality check ===
+        alert(null===undefined); //false , because each of them is a different type.
+        //For a non-strict check ==
+        alert(null==undefined); //true
+                    //Strange result: null vs 0
+        alert(null>0); //false
+        alert(null==0); //false
+        alert(null>=0); //true
+                    //An incomparable undefined
+            //The value undefined shouldn’t be compared to other values:
+        alert(undefined>0); //false
+        alert(undefined<0); //false
+        alert(undefined==0); //false
+//-------------------------------------------------------------------------------------------------------------
+                         //Conditional branching: if, '?'
+
+       
+
+    </script>
+    <p>.....this is after the script</p> 
+  </body>
+</html>
