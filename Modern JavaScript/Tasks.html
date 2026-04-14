@@ -76,6 +76,22 @@ undefined == null // true
 undefined === null // false
 null == "\n0\n" // false
 null === +"\n0\n" // false
+//--------------------------------------------------------------------------------
+           // Conditional branching: if, '?'
+    //if (a string with zero)
+    //Will alert be shown?
+    if("0"){
+      alert("Hello"); //yes ,Hello b/c "0" is string
+    }
+    //The name of JavaScript
+// Using the if..else construct, write the code which asks: ‘What is the “official” name of JavaScript?’
+//If the visitor enters “ECMAScript”, then output “Right!”, otherwise – output: “You don’t know? ECMAScript!”
+let JS = prompt("What is the “official” name of JavaScript?");
+  if(JS == 'ECMAScript'){
+    alert('Right!');
+  } else{
+    alert('You don’t know? ECMAScript!')
+  }
     </script>
   </body>
 </html>

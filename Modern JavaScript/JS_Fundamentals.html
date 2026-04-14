@@ -210,13 +210,14 @@ alert(+mab + +meku); // 3 alert( Number(mab) + Number(meku) );
           let t,e,m;
           t=e=m=2+4;
           alert(t); //6
-          alerrt(e); //6
+          alert(e); //6
           alert(m);  //6
                  //Modify-in-place
           let h = 2;
           h += 4; //6
           h *= 3;
           alert(h); //18
+         console.log(Math.round(2.2)); // 2
                   //Increment/decrement
                 //Increment ++ increases a variable by 1:
           let counter = 2;
@@ -295,8 +296,74 @@ alert(+mab + +meku); // 3 alert( Number(mab) + Number(meku) );
         alert(undefined==0); //false
 //-------------------------------------------------------------------------------------------------------------
                          //Conditional branching: if, '?'
+         //The “if” statement
+        let year = prompt('In which year i born?','');
+        if(year==1995) {
+          alert('I am right!');
+          alert('i am smart');
+        }
+        //The “else” clause
+       let Year = prompt('In which year i born?','');
+        if(Year==1995) {
+          alert('I am right!');
+        }else
+        {
+          alert('I am not right!');
+        }
+        //Several conditions: “else if”
+        let YEar = prompt('In which year i born?','');
+        if(YEar==1995) {
+          alert('I am right!');
+        }else if(YEar!==1995)
+        {
+          alert('I am smart!');
+        } else {
+          alert('I am not smart!');
+        }
+        //Conditional operator ‘?’
+       let accessAllowed;
+       let AGE = prompt('How old are you?',"");
 
-       
+       if(AGE>18){
+        accessAllowed = true;
+       } else {
+        accessAllowed = false;
+       }
+       alert(accessAllowed);
+           //Multiple ‘?’
+       let AGe = prompt('AGe?',18);
+
+       let Message = (AGe<3)? 'Hi,baby!':
+       (AGe<18)?'Hello':
+       (AGe<100)?'Greeting':
+       'What an unusual age!';
+       alert(Message);
+             //Non-traditional use of ‘?’
+      //Sometimes the question mark ? is used as a replacement for if:
+      let company = prompt('which company is created javaScript?','');
+      (company== 'Netscale')?
+      alert('Right!'): alert('Wrong!');
+      //Here is the same code using if for comparison:
+      let Company = prompt('which company is created javascript?','');
+      if(Company = 'Netscape'){
+        alert('Right!');
+      } else {
+        alert('Wrong!');
+      }
+//--------------------------------------------------------------------------------------------------------------------
+                     //Logical operators
+    //There are four logical operators in JavaScript: || (OR), && (AND), ! (NOT), ?? (Nullish Coalescing). 
+    //Here we cover the first three, the ?? operator is in the next article.
+                              // ||(OR)
+    alert(false || true); // true
+    alert(true || true);//true
+    alert(false || false); //false
+    alert(true || false); // true
+    alert( undefined || null || 0 ); // 0 (all falsy, returns the last value)
+let houre = 9;
+if(houre<10 || houre>8){
+  alert("yisma");
+}
 
     </script>
     <p>.....this is after the script</p> 

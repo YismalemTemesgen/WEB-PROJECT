@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <script>
+              //6f
+        const randomNumber = Math.random();
+              //6g
+        if(randomNumber <= 0.5){
+          console.log('heads');
+        } else {
+          console.log('tails');
+        }
+             //6h
+       let result;
+       if(randomNumber <= 0.5){
+          result = 'heads';
+        } else {
+          result = 'tails';
+        }
+             //6i
+      const guess = 'heads' || 'tails';
+         if(guess === result){
+          console.log('You win!');
+         } else if (guess !== result){
+          console.log('You lose!');
+         }
+         //6j
+         const result = randomNumber <= 0.5? 'heads' : 'tails';
+
+         const guess = 'heads'|| 'tails';
+         console.log( guess === result?'You win!' : 'You lose!');
+      </script>
+    </body>
+  </head>
+</html>
