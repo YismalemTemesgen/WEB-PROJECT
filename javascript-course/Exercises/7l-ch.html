@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FunExercises</title>
+</head>
+<body>
+<button onclick="
+
+    console.log(`Cart quantity: ${cartQuantity}`);//'Cart quantity: 0;'
+
+    ">Show Quantity</button>
+
+  <button onclick="
+  if(cartQuantity+1 >10){
+    alert('The cart is full');
+  } else {
+  cartQuantity ++;
+  console.log(`Cart quantity: ${cartQuantity}`);
+  }
+  ">Add to Cart</button>
+
+  <button onclick="
+   updateCartQuantity(2);
+  ">+2</button>
+
+  <button onclick="
+   updateCartQuantity(3);
+  ">+3</button>
+
+  <button onclick="
+  updateCartQuantity(4);
+  ">+4</button>
+
+  <button onclick="
+  updateCartQuantity(5);
+  ">+5</button>
+
+  <button onclick="
+   updateCartQuantity(-1);
+  ">Remove from cart</button>
+
+  <button onclick="
+   updateCartQuantity(-2);
+   ">2</button>
+
+<button onclick="
+   updateCartQuantity(-3);
+  ">-3</button>
+
+  <button onclick="
+  cartQuantity = 0;
+  console.log('Cart was reset.')
+   console.log(`Cart quantity: ${cartQuantity}`);
+  ">Reset Cart</button>
+  
+  <script>
+  function updateCartQuantity (value) {
+      if(cartQuantity+value >10){
+        alert('The cart is full');
+        return;
+      } 
+      
+      if(cartQuantity + value <0){
+       alert('Not enough items in the cart');
+       return;
+          } 
+          
+          {
+        cartQuantity = cartQuantity+value;//sortcut  cartQuantity += value;
+        console.log(`Cart quantity: ${cartQuantity}`);
+      }
+  }
+  let cartQuantity = 0;
+
+</script>
+</body>  
+
+</html>

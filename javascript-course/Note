@@ -1,0 +1,15 @@
+        Process for JavaScript
+1.Fingure out what steps we need(algorithm)
+2.Convert these steps into code
+
+The difference b/n .innerHTML AND .innerText is the space
+
+     3 Languages
+     HTML = creates the content
+     CSS = changes the webpage appearance
+     JavaScript = makes it interactive
+     Arrays
+     -another type of value
+     -represents a list of values
+     - .push() add a value to an array
+     - .splice() removes a value from an array
